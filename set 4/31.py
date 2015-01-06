@@ -65,7 +65,7 @@ filename = "filename"
 #
 #  for comparison, print the HMAC of filename
 #
-''
+
 hmac0 = cryptopals.hmac.hmac_sha1(api.key, filename)
 print cryptopals.to_hex(hmac0)
 
