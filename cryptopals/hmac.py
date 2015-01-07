@@ -1,6 +1,7 @@
 
 import cryptopals
 import cryptopals.sha1
+import cryptopals.sha256
 
 BLOCK_LENGTH = 64
 
@@ -30,3 +31,7 @@ def hmac_digest(key, message, digest):
 
 def hmac_sha1(key, message):
 	return hmac_digest(key, message, cryptopals.sha1.SHA1)
+
+
+def hmac_sha256(key, message):
+	return hmac_digest(key, message, cryptopals.sha256.SHA256)
